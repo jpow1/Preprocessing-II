@@ -137,6 +137,11 @@ body {
   margin: 0 auto;
   width: 100%;
 }
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+}
 html,
 body {
   font-family: 'Roboto', sans-serif;
@@ -173,25 +178,49 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
 .header {
   display: flex;
   justify-content: space-evenly;
   border-bottom: 2px dashed gray;
 }
+@media (max-width: 500px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
 .header .navigation {
   padding: 20px;
   margin-top: 20px;
+  flex-wrap: nowrap;
 }
 .header a {
   text-decoration: none;
   padding: 30px;
   color: black;
   text-align: center;
-  flex-direction: row;
   font-size: 14px;
+}
+@media (max-width: 500px) {
+  .header a {
+    padding: 10px;
+    text-align: center;
+  }
 }
 .header h1 {
   padding: 20px;
+}
+@media (max-width: 500px) {
+  .header h1 {
+    text-align: center;
+    padding: 10px 0;
+  }
 }
 .footer {
   width: 100%;
@@ -210,6 +239,12 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    align-content: center;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
@@ -224,6 +259,11 @@ img {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -246,6 +286,13 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
@@ -256,8 +303,19 @@ img {
   justify-content: space-between;
   border-bottom: 2px dashed gray;
 }
+@media (max-width: 500px) {
+  .main-header {
+    align-content: center;
+    margin: 0 auto;
+  }
+}
 .main-header .welcome {
   padding: 20px 0;
+}
+@media (max-width: 500px) {
+  .main-header {
+    text-align: center;
+  }
 }
 .btn {
   padding: 0.5em;
