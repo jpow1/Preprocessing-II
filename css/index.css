@@ -259,3 +259,13 @@ img {
 .main-header .welcome {
   padding: 20px 0;
 }
+.btn {
+  padding: 0.5em;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.7rem;
+  line-height: 1em;
+  background-color: teal;
+  color: white;
+  text-align: center;
+}
